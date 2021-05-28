@@ -22,5 +22,7 @@ O segundo desafio do Bootcamp - Desenvolvedor(a) React, trata-se de vários indi
 A API utilizada para o desenvolvimento da aplicação foi <mark>Coronavirus COVID19 API</mark>
 Para mais informações, acesse a documentação da API em: https://documenter.getpostman.com/view/10808728/SzS8rjbc
 
+Estilização https://keen.io/
 
-Feito com 💜 by Rafael :wave:
+
+Feito por 💜 by Rafael :wave:
