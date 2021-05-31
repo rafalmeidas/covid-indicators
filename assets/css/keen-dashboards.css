@@ -506,6 +506,7 @@ button {
 }
 
 .btn-primary {
+  cursor: pointer;
   color: #fff;
   background-color: #428bca;
   border-color: #357ebd;
@@ -537,6 +538,7 @@ button {
 
 .btn-block {
   display: block;
+  margin-top: 6px;
   width: 100%;
 }
 
@@ -774,4 +776,9 @@ button {
   .keen-dashboard .chart-wrapper {
     margin-bottom: 0;
   }
+}
+
+.custom-select {
+  display: block;
+  width: 100%;
 }

@@ -2,8 +2,19 @@ export function formatNumber(data) {
     return data.toLocaleString('PT-br');
 }
 
-export function calcMedia() {
+export function calcMedia(data) {
 
+    let d = 0;
+    data.map((item) => {
+        d += item;
+    });
+
+    let newArray = [];
+    let media = d / data.length;
+    for (let i = 0; i < data.length; i++) {
+        newArray.push(media);
+    }
+    return newArray;
 }
 
 export function calcStatus(data, status) {
@@ -17,17 +28,15 @@ export function calcStatus(data, status) {
             });
             break;
         case "Deaths":
-            console.log("deaths");
             data.map((item) => {
                 newArray.push(item.Deaths)
             });
             break;
         case "Recovered":
-            console.log("recovered");
             data.map((item) => {
                 newArray.push(item.Recovered)
             });
             break;
     }
-    return _.sum(newArray);
+    return newArray;
 }

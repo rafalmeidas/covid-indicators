@@ -18,8 +18,10 @@ function populateGlobal(data) {
     confirmedE.innerText = formatNumber(summaryGlobal.TotalConfirmed);
     deathE.innerText = formatNumber(summaryGlobal.TotalDeaths);
     recoveredE.innerText = formatNumber(summaryGlobal.TotalRecovered);
-    dateE.innerText = `${summaryGlobal.Date}`; //utilizar dados já contidos no campo e date-fns
+    dateE.innerText = `Data de atualização: ${dateFns.format(summaryGlobal.Date, "DD.MM.YYYY HH:mm")}`; //utilizar dados já contidos no campo e date-fns
 
+
+    console.log(summaryGlobal.NewConfirmed)
     //Gráfico de pizza
     let pizza = new Chart(document.getElementById("pizza"), {
         type: 'pie',
